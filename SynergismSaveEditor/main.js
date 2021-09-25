@@ -1,7 +1,3 @@
-/*
-let strDic = JSON.stringify(dic);
-console.log(btoa(strDic));
-Encode */
 const Field = document.getElementById("Field");
 const SupportedVersions = ["2.7.0"];
 const Data = [
@@ -83,8 +79,8 @@ function ConvertNumber(in0, in1Str, isUndefined=false) {
     let in1 = Number(in1Str);
     if (isUndefined) { return 0; };
     if (!isFinite(in0) || isNaN(in0) || !isFinite(in1) || isNaN(in1)) { return 0; };
-    if (in0 < 0 || in0 >= 10 || in1 < 0) { return 0; };
-    if (in1Str.length > 12) { return 0; };
+    if (in0 < 0 || in0 >= 10 || in1 < 0 || in1 > 1e307) { return 0; };
+    if (in1Str.length > 307) { return 0; };
     let splited = in1Str.split("e+");
     if (splited.length == 2) {
         let man = Math.floor(Number(splited[0])).toString();
