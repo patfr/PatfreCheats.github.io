@@ -1,3 +1,6 @@
+# v0.1.3
+- Added credits
+
 # v0.1.2
 - Added update log to view what's new
 
