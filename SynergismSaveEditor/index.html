@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Synergism Save Editor v0.1</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body style="background-color: #202020;">
+        <div id="FieldArea">
+            <div id="FieldTitle">Insert save file here</div>
+            <input type="text" id="Field">
+            <div id="Submit" onclick="Submit()">Decode</div>
+        </div>
+        <div id="OutArea">
+            <div id="OutTitle">Modified save file will show here</div>
+            <input type="text" id="OutField">
+            <div id="OutSubmit" onclick="OutSubmit()">Encode</div>
+        </div>
+        <div id="Data">
+            <div id="DataBox">
+                <div id="coinsEdit" class="EditData">
+                    <div id="coinsEditTitle" class="EditDataTitle">Coins</div>
+                    <div id="coinsEditCV" class="EditDataCV">Current: N/A</div>
+                    <input type="text" id="coinsInput0" class="EditDataInput" style="right: 320px;">
+                    <input type="text" id="coinsInput1" class="EditDataInput" style="right: 100px;">
+                    <div id="coinsEditSubmit" class="EditDataSub" onclick="SubmitChange('coins')">Change</div>
+                </div>
+                <div id="prestigePointsEdit" class="EditData">
+                    <div id="prestigePointsEditTitle" class="EditDataTitle">Diamonds</div>
+                    <div id="prestigePointsEditCV" class="EditDataCV">Current: N/A</div>
+                    <input type="text" id="prestigePointsInput0" class="EditDataInput" style="right: 320px;">
+                    <input type="text" id="prestigePointsInput1" class="EditDataInput" style="right: 100px;">
+                    <div id="prestigePointsEditSubmit" class="EditDataSub" onclick="SubmitChange('prestigePoints')">Change</div>
+                </div>
+            </div>
+        </div>
+    </body>
 
+    <!-- Classes -->
+    <script src="classes/Item.js"></script>
+
+    <!-- Main -->
+    <script src="main.js"></script>
+</html>
