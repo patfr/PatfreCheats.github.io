@@ -1,5 +1,5 @@
 # v0.1.1
-Fixed a bug
+- Fixed a bug
 
 # v0.1
-Released
+- Released
