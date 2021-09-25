@@ -84,7 +84,7 @@ function ConvertNumber(in0, in1Str, isUndefined=false) {
     if (isUndefined) { return 0; };
     if (!isFinite(in0) || isNaN(in0) || !isFinite(in1) || isNaN(in1)) { return 0; };
     if (in0 < 0 || in0 >= 10 || in1 < 0) { return 0; };
-    if (in1Str.length > 307) { return 0; };
+    if (in1Str.length > 12) { return 0; };
     let splited = in1Str.split("e+");
     if (splited.length == 2) {
         let man = Math.floor(Number(splited[0])).toString();
