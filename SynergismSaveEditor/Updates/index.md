@@ -1,3 +1,6 @@
+# v0.1.2
+- Added update log
+
 # v0.1.1
 - Fixed a bug
 
