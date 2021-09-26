@@ -12,7 +12,7 @@ if everything went well you should now see that all the values will appear on th
   - Field 1 (the most left input field): Ranges between 0 and 10 (0 inclusive, 10 exclusive)
   - Field 2 (the most right input field): Ranges between 0 and 1e+307 (0 inclusive, 1e+307 inclusive)
 
-# Custom error code meaning
+# Custom error codes meaning
 Note: If the message is red it means a Javascript error has accured which is not the same as these below
 - Error #100 - This means that either the given data was not in base64 or it included characters or other things that shouldn't be there.
 - Error #101 - This means that the decoded data was not in a Javascript Dictionary form. Example of dictionary {"Key":"Value"}.
