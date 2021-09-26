@@ -1,4 +1,4 @@
 # Credits
 Patrick Frederiksen - Everything.
 
-Made for Synergism v2.7.0+ https://pseudo-corp.github.io/SynergismOfficial/
+Made for Synergism https://pseudo-corp.github.io/SynergismOfficial/
