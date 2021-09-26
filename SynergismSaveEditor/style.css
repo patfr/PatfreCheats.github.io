@@ -244,3 +244,20 @@
     align-items: center;
     justify-content: center;
 }
+
+#HowToUseLink {
+    position: fixed;
+    display: flex;
+    bottom: 55px;
+    left: 170px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    user-select: none;
+    font-size: 20px;
+    border: 2px solid #404040;
+    background-color: #303030;
+    width: 150px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+}
