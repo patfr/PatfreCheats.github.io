@@ -25,7 +25,7 @@ let loaded = false;
 let jsonData = {};
 
 function ListSupportedVersions() {
-    let str = "Supported versions\n\n";
+    let str = "Supported versions v0.2\n\n";
     for (let i = SupportedVersions.length - 1; i > -1; i--) {
         if (i == 0)
             str += `v${SupportedVersions[i]}`;
