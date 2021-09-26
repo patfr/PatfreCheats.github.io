@@ -1,3 +1,6 @@
+# v0.1.4
+- Added discord link
+
 # v0.1.3
 - Added credits
 
