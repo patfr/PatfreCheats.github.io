@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>Synergism Save Editor v0.1.4</title>
+        <title>Synergism Save Editor v0.2</title>
         <link href="style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body style="background-color: #202020;">
@@ -20,21 +20,99 @@
         <a id="UpdateLogLink" href="https://patfr.github.io/PatfreCheats.github.io/SynergismSaveEditor/Updates/" target="_blank">Update log</a>
         <a id="CreditsLink" href="https://patfr.github.io/PatfreCheats.github.io/SynergismSaveEditor/Credits/" target="_blank">Credits</a>
         <a id="DiscordLink" href="https://discord.gg/ZduBfmMJyP" target="_blank">Discord</a>
+        <a id="HowToUseLink" href="https://patfr.github.io/PatfreCheats.github.io/SynergismSaveEditor/HowToUse/" target="_blank">How to use</a>
         <div id="Data">
             <div id="DataBox">
                 <div id="coinsEdit" class="EditData">
-                    <div id="coinsEditTitle" class="EditDataTitle">Coins</div>
+                    <div id="coinsEditTitle" class="EditDataTitle"></div>
                     <div id="coinsEditCV" class="EditDataCV">Current: N/A</div>
                     <input type="text" id="coinsInput0" class="EditDataInput" style="right: 320px;">
                     <input type="text" id="coinsInput1" class="EditDataInput" style="right: 100px;">
                     <div id="coinsEditSubmit" class="EditDataSub" onclick="SubmitChange('coins')">Change</div>
                 </div>
+                <div id="coinsThisPrestigeEdit" class="EditData">
+                    <div id="coinsThisPrestigeEditTitle" class="EditDataTitle"></div>
+                    <div id="coinsThisPrestigeEditCV" class="EditDataCV">Current: N/A</div>
+                    <input type="text" id="coinsThisPrestigeInput0" class="EditDataInput" style="right: 320px;">
+                    <input type="text" id="coinsThisPrestigeInput1" class="EditDataInput" style="right: 100px;">
+                    <div id="coinsThisPrestigeEditSubmit" class="EditDataSub" onclick="SubmitChange('coinsThisPrestige')">Change</div>
+                </div>
+                <div id="coinsThisTranscensionEdit" class="EditData">
+                    <div id="coinsThisTranscensionEditTitle" class="EditDataTitle"></div>
+                    <div id="coinsThisTranscensionEditCV" class="EditDataCV">Current: N/A</div>
+                    <input type="text" id="coinsThisTranscensionInput0" class="EditDataInput" style="right: 320px;">
+                    <input type="text" id="coinsThisTranscensionInput1" class="EditDataInput" style="right: 100px;">
+                    <div id="coinsThisTranscensionEditSubmit" class="EditDataSub" onclick="SubmitChange('coinsThisTranscension')">Change</div>
+                </div>
+                <div id="coinsThisReincarnationEdit" class="EditData">
+                    <div id="coinsThisReincarnationEditTitle" class="EditDataTitle"></div>
+                    <div id="coinsThisReincarnationEditCV" class="EditDataCV">Current: N/A</div>
+                    <input type="text" id="coinsThisReincarnationInput0" class="EditDataInput" style="right: 320px;">
+                    <input type="text" id="coinsThisReincarnationInput1" class="EditDataInput" style="right: 100px;">
+                    <div id="coinsThisReincarnationEditSubmit" class="EditDataSub" onclick="SubmitChange('coinsThisReincarnation')">Change</div>
+                </div>
+                <div id="coinsTotalEdit" class="EditData">
+                    <div id="coinsTotalEditTitle" class="EditDataTitle"></div>
+                    <div id="coinsTotalEditCV" class="EditDataCV">Current: N/A</div>
+                    <input type="text" id="coinsTotalInput0" class="EditDataInput" style="right: 320px;">
+                    <input type="text" id="coinsTotalInput1" class="EditDataInput" style="right: 100px;">
+                    <div id="coinsTotalEditSubmit" class="EditDataSub" onclick="SubmitChange('coinsTotal')">Change</div>
+                </div>
                 <div id="prestigePointsEdit" class="EditData">
-                    <div id="prestigePointsEditTitle" class="EditDataTitle">Diamonds</div>
+                    <div id="prestigePointsEditTitle" class="EditDataTitle"></div>
                     <div id="prestigePointsEditCV" class="EditDataCV">Current: N/A</div>
                     <input type="text" id="prestigePointsInput0" class="EditDataInput" style="right: 320px;">
                     <input type="text" id="prestigePointsInput1" class="EditDataInput" style="right: 100px;">
                     <div id="prestigePointsEditSubmit" class="EditDataSub" onclick="SubmitChange('prestigePoints')">Change</div>
+                </div>
+                <div id="transcendPointsEdit" class="EditData">
+                    <div id="transcendPointsEditTitle" class="EditDataTitle"></div>
+                    <div id="transcendPointsEditCV" class="EditDataCV">Current: N/A</div>
+                    <input type="text" id="transcendPointsInput0" class="EditDataInput" style="right: 320px;">
+                    <input type="text" id="transcendPointsInput1" class="EditDataInput" style="right: 100px;">
+                    <div id="transcendPointsEditSubmit" class="EditDataSub" onclick="SubmitChange('transcendPoints')">Change</div>
+                </div>
+                <div id="reincarnationPointsEdit" class="EditData">
+                    <div id="reincarnationPointsEditTitle" class="EditDataTitle"></div>
+                    <div id="reincarnationPointsEditCV" class="EditDataCV">Current: N/A</div>
+                    <input type="text" id="reincarnationPointsInput0" class="EditDataInput" style="right: 320px;">
+                    <input type="text" id="reincarnationPointsInput1" class="EditDataInput" style="right: 100px;">
+                    <div id="reincarnationPointsEditSubmit" class="EditDataSub" onclick="SubmitChange('reincarnationPoints')">Change</div>
+                </div>
+                <div id="prestigeShardsEdit" class="EditData">
+                    <div id="prestigeShardsEditTitle" class="EditDataTitle"></div>
+                    <div id="prestigeShardsEditCV" class="EditDataCV">Current: N/A</div>
+                    <input type="text" id="prestigeShardsInput0" class="EditDataInput" style="right: 320px;">
+                    <input type="text" id="prestigeShardsInput1" class="EditDataInput" style="right: 100px;">
+                    <div id="prestigeShardsEditSubmit" class="EditDataSub" onclick="SubmitChange('prestigeShards')">Change</div>
+                </div>
+                <div id="transcendShardsEdit" class="EditData">
+                    <div id="transcendShardsEditTitle" class="EditDataTitle"></div>
+                    <div id="transcendShardsEditCV" class="EditDataCV">Current: N/A</div>
+                    <input type="text" id="transcendShardsInput0" class="EditDataInput" style="right: 320px;">
+                    <input type="text" id="transcendShardsInput1" class="EditDataInput" style="right: 100px;">
+                    <div id="transcendShardsEditSubmit" class="EditDataSub" onclick="SubmitChange('transcendShards')">Change</div>
+                </div>
+                <div id="reincarnationShardsEdit" class="EditData">
+                    <div id="reincarnationShardsEditTitle" class="EditDataTitle"></div>
+                    <div id="reincarnationShardsEditCV" class="EditDataCV">Current: N/A</div>
+                    <input type="text" id="reincarnationShardsInput0" class="EditDataInput" style="right: 320px;">
+                    <input type="text" id="reincarnationShardsInput1" class="EditDataInput" style="right: 100px;">
+                    <div id="reincarnationShardsEditSubmit" class="EditDataSub" onclick="SubmitChange('reincarnationShards')">Change</div>
+                </div>
+                <div id="researchPointsEdit" class="EditData">
+                    <div id="researchPointsEditTitle" class="EditDataTitle"></div>
+                    <div id="researchPointsEditCV" class="EditDataCV">Current: N/A</div>
+                    <input type="text" id="researchPointsInput0" class="EditDataInput" style="right: 320px;">
+                    <input type="text" id="researchPointsInput1" class="EditDataInput" style="right: 100px;">
+                    <div id="researchPointsEditSubmit" class="EditDataSub" onclick="SubmitChange('researchPoints')">Change</div>
+                </div>
+                <div id="runeshardsEdit" class="EditData">
+                    <div id="runeshardsEditTitle" class="EditDataTitle"></div>
+                    <div id="runeshardsEditCV" class="EditDataCV">Current: N/A</div>
+                    <input type="text" id="runeshardsInput0" class="EditDataInput" style="right: 320px;">
+                    <input type="text" id="runeshardsInput1" class="EditDataInput" style="right: 100px;">
+                    <div id="runeshardsEditSubmit" class="EditDataSub" onclick="SubmitChange('runeshards')">Change</div>
                 </div>
             </div>
         </div>
