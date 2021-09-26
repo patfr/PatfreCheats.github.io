@@ -12,7 +12,7 @@ class Item {
         this.Update();
     }
 
-    Update() {
+    Update(UpdateOnly=false) {
         if (loaded) {
             this.Current = jsonData[this.Index];
         }
@@ -22,16 +22,20 @@ class Item {
                 let strs = this.Current.toString().split("e+");
                 if (strs.length == 2) {
                     this.CV.innerHTML = `Current: ${strs[0]}e+${Number(strs[1])}`;
-                    this.Input0.value = strs[0];
-                    if (this.Input1 != undefined) {
-                        this.Input1.value = strs[1];
+                    if (!UpdateOnly) {
+                        this.Input0.value = strs[0];
+                        if (this.Input1 != undefined) {
+                            this.Input1.value = strs[1];
+                        }
                     }
                 } else if (strs.length == 1) {
                     let length = this.Current.toString().length - 1;
                     this.CV.innerHTML = `Current: ${this.Current / Math.pow(10, length)}e+${length}`;
-                    this.Input0.value = this.Current / Math.pow(10, length);
-                    if (this.Input1 != undefined) {
-                        this.Input1.value = length;
+                    if (!UpdateOnly) {
+                        this.Input0.value = this.Current / Math.pow(10, length);
+                        if (this.Input1 != undefined) {
+                            this.Input1.value = length;
+                        }
                     }
                 }
                 break;
