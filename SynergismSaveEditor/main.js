@@ -1,5 +1,5 @@
 const Field = document.getElementById("Field");
-const SupportedVersions = ["2.7.0"];
+const SupportedVersions = ["2.1.2", "2.7.0"];
 const Data = [
     {Name: "Coins", Index: "coins", Type: "number"},
     {Name: "Diamonds", Index: "prestigePoints", Type: "number"},
