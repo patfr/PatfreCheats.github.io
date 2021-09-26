@@ -1,6 +1,6 @@
 # How to use
 
-Note: Join the discord for further help if this does not help and to see what versions are supported by this program.
+Note: Join the discord for further help if this does not help and to see what versions are supported by this program. You can also use ListSupportedVersions() in console to see what versions are currently supported.
 
 To start you need to paste your save file into where it says "Insert save file here". (Note: Only works with plain text and any changes to your save file will make it un-readable for the program and you cannot drag and drop files into it)
 
